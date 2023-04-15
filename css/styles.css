@@ -124,7 +124,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   transition: color var(--typical-transition);
 }
 
@@ -178,7 +178,7 @@ body {
 /* ---------------------HERO---------------------- */
 
 .hero {
-  background-color: #2e2f42;
+  background-color: var(--footer-background-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -277,7 +277,7 @@ body {
 .icon-advantages-container {
   width: 264px;
   height: 112px;
-  background-color: #f4f4fd;
+  background-color: var(--white-button-portfolio);
   border-radius: 4px;
   margin-bottom: 8px;
   display: flex;
@@ -293,7 +293,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   width: 264px;
   height: 24px;
   flex: none;
@@ -306,7 +306,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-color);
   width: 264px;
   height: 72px;
   flex: none;
@@ -327,7 +327,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   margin-bottom: 72px;
 }
 
@@ -343,7 +343,7 @@ body {
 /* ---------------------TEAM---------------------- */
 
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--white-button-portfolio);
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -355,7 +355,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   margin-bottom: 72px;
 }
 
@@ -365,7 +365,7 @@ body {
 }
 
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -386,7 +386,7 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   margin-bottom: 8px;
 }
 
@@ -396,7 +396,7 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-color);
   margin-bottom: 8px;
 }
 
@@ -444,7 +444,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   margin-bottom: 72px;
 }
 .customers-list {
@@ -500,7 +500,7 @@ body {
 }
 
 .footer-logo {
-  color: #f4f4fd;
+  color: var(--white-button-portfolio);
 }
 
 .footer-offer {
@@ -509,7 +509,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--white-button-portfolio);
   margin-top: 18px;
 }
 
@@ -548,7 +548,7 @@ body {
 }
 
 .soc-icon {
-  fill: #f4f4fd;
+  fill: var(--white-button-portfolio);
 }
 
 /* ---------------------SECTION---------------------- */
@@ -607,6 +607,7 @@ body {
 
 .category-link {
   display: block;
+  transition: box-shadow var(--typical-transition);
 }
 
 .categori-hidden-container {
@@ -627,7 +628,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--white-button-portfolio);
   padding: 40px 32px 164px 32px;
   background-color: var(--logo-color);
   transform: translateY(100%);
@@ -647,7 +648,7 @@ body {
 
 .container-text {
   padding: 32px 16px 32px 16px;
-  background: #ffffff;
+  background: var(--background-color);
   border: 1px solid #e7e9fc;
   border-top-style: none;
 }
@@ -657,7 +658,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--footer-background-color);
   margin-bottom: 8px;
 }
 
@@ -666,7 +667,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--address-color);
 }
 
 .backdrop {
@@ -708,11 +709,24 @@ body {
   justify-content: center;
   align-self: center;
   margin-left: auto;
+  transition: background-color var(--typical-transition);
 }
 
 .cross {
   justify-content: center;
   align-self: center;
+  fill: var(--footer-background-color);
+  transition: fill var(--typical-transition);
+}
+
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--brand-color);
+}
+
+.button-modal:hover .cross,
+.button-modal:focus .cross {
+  fill: var(--background-color);
 }
 
 .is-hidden {
